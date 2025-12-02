@@ -29,51 +29,7 @@ This is a complete applied ML project using a large real dataset.
 
 ---
 
-## 2. Repository Structure
-
-home-credit-boosting-comparison/
-│
-├── data/
-│ ├── raw/ # original Kaggle files
-│ └── processed/ # cleaned and feature-engineered datasets
-│
-├── notebooks/ # optional EDA or experimentation
-│ └── 01_eda.ipynb
-│
-├── src/
-│ ├── config.py # configs, paths, settings
-│ ├── data_loading.py # raw data ingestion
-│ ├── preprocessing.py # cleaning, merging, feature engineering
-│ ├── train_xgboost.py
-│ ├── train_catboost.py
-│ ├── train_lightgbm.py
-│ ├── evaluate.py # evaluation functions
-│ ├── compare_models.py # final comparison script
-│ └── utils.py # helper utilities
-│
-├── models/ # saved model artifacts
-│ ├── xgboost_model.json
-│ ├── catboost_model.cbm
-│ └── lightgbm_model.txt
-│
-├── results/
-│ ├── eda/
-│ ├── metrics/
-│ ├── feature_importance/
-│ ├── shap/
-│ └── runtime/
-│
-├── reports/
-│ └── model_comparison.md
-│
-├── requirements.txt
-├── .gitignore
-└── README.md
-
-
----
-
-## 3. Dataset
+## 2. Dataset
 
 This project uses the **Home Credit Default Risk** dataset from Kaggle:  
 https://www.kaggle.com/competitions/home-credit-default-risk
@@ -93,7 +49,7 @@ https://www.kaggle.com/competitions/home-credit-default-risk
 
 ---
 
-## 4. Installation
+## 3. Installation
 
 Clone the repository:
 
@@ -104,7 +60,7 @@ cd home-credit-boosting-comparison
 Install dependencies:
 pip install -r requirements.txt
 
-## 5. Running the Pipeline
+## 4. Running the Pipeline
 
 Preprocess the data:
 ```bash
@@ -123,7 +79,7 @@ Compare results:
 python src/compare_models.py
 ```
 
-## 6. Results
+## 5. Results
 
 All results are saved under results/, including:
 - metrics (AUC, accuracy, F1, RMSE)
