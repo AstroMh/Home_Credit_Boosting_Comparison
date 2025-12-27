@@ -1,0 +1,18 @@
+# Data (large / external)
+data/raw/
+data/processed/
+
+# Models and results (optional but recommended)
+models/
+results/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+env/
